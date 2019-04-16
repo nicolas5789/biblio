@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>Page accueil</p>
+
+<p>Prêts à choisir un restaurant ?</p>
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Créer un sondage" />
+}
+<ul>
+    <li>@Html.ActionLink("Ajouter un restaurant", "CreerRestaurant", "Restaurant")</li>
+    <li>@Html.ActionLink("Modifier les restaurants", "Index", "Restaurant")</li>
+</ul>
